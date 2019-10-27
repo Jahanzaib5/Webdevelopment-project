@@ -1,3 +1,7 @@
+body{
+  width: 100%;
+}
+
 #nav-bar{
     width:100%;
     height: 50%;
@@ -34,13 +38,21 @@
 }
 
 #nav-bar ul{
-    float: right;
+    float: left;
 }
 
 /*-----------------------------first page----------------------*/
 #first-page{
     color: black;
     background-color: aquamarine;
+    padding-top: 3%;
+}
+
+#first-page hr{
+    border: 5px solid rgb(92, 102, 92);
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 .login-page {
@@ -130,4 +142,26 @@
   }
   .container .info span .fa {
     color: #EF3B3A;
+  }
+  #left{
+    border: 1px solid red;
+    text-align: left;
+    width: 100%;
+    padding-left: 6%;
+    padding-right: 3%;
+  }
+
+  #left h2{
+    font-size: 6vh;
+    margin-top: 10%;
+    line-height: 1.4;
+  }
+
+  #left h4{
+    color: #717579;
+  }
+
+  #right{
+    border: 1px solid red;
+    width: 100%;
   }
