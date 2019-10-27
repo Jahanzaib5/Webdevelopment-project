@@ -15,9 +15,9 @@
   <body>
     <!--Navigation bar-->
     <div id="nav-bar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"
-          ><img src="./images/talim.png" alt="Logo" width="160" height="60"
+          ><img src="./images/talim.png" alt="Logo" width="160" height="50"
         /></a>
         <button
           class="navbar-toggler"
@@ -40,34 +40,60 @@
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >Jobs <span class="sr-only">(current)</span></a
+                >Scholarships <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >Scholarships <span class="sr-only">(current)</span></a
+                >Jobs <span class="sr-only">(current)</span></a
               >
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input
               class="form-control mr-sm-2"
-              type="email"
-              placeholder="Enter Email"
-              aria-label="Email"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
             />
-            <input
-              class="form-control mr-sm-2"
-              type="password"
-              placeholder="Enter Password"
-              aria-label="Password"
-            />
+
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Login
+              Search
             </button>
           </form>
         </div>
       </nav>
+    </div>
+    <!------------------------------first page------------------------------------------->
+    <div id="first-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">col-sm-8</div>
+          <div class="col-sm-4">
+            <div class="login-page">
+              <div class="form">
+                <form class="register-form">
+                  <input type="text" placeholder="name" />
+                  <input type="password" placeholder="password" />
+                  <input type="text" placeholder="email address" />
+                  <button>create</button>
+                  <p class="message">
+                    Already registered? <a href="#">Sign In</a>
+                  </p>
+                </form>
+                <form class="login-form">
+                  <input type="text" placeholder="username" />
+                  <input type="password" placeholder="password" />
+                  <button>login</button>
+                  <p class="message">
+                    Not registered? <a href="./forms/signup.html">Create an account</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!--Linking javascript file-->
