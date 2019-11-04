@@ -49,18 +49,27 @@
               >
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
 
+          <form class="form-inline my-2 my-lg-0" id="login-form" onsubmit="return login()">
+            <input
+              type="email"
+              class="form-control mr-sm-2"
+              placeholder="Email Address"
+              id="user-email"
+              required
+            />
+            <input
+              type="password"
+              class="form-control mr-sm-2"
+              placeholder="Password"
+              id="user-pass"
+              required
+            />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Search
+              Signin
             </button>
           </form>
+
         </div>
       </nav>
     </div>
@@ -69,9 +78,15 @@
       <div class="container-fluid">
         <div class="row">
           <div id="left" class="col-sm-7">
-            <h2>Find your choice of Universities, Scholarships, Jobs in this web portal!</h2>
-            <hr>
-            <h4>Your place of finding networks, opportunities and much more by signing in to this web portal</h4>
+            <h2>
+              Find your choice of Universities, Scholarships, Jobs in this web
+              portal!
+            </h2>
+            <hr />
+            <h4>
+              Your place of finding networks, opportunities and much more by
+              signing in to this web portal
+            </h4>
           </div>
           <div id="right" class="col-sm-5">
             <div class="login-page">
@@ -90,7 +105,8 @@
                   <input type="password" placeholder="password" />
                   <button>login</button>
                   <p class="message">
-                    Not registered? <a href="./forms/signup.html">Create an account</a>
+                    Not registered?
+                    <a href="./forms/signup.html">Create an account</a>
                   </p>
                 </form>
               </div>
