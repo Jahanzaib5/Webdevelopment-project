@@ -50,24 +50,22 @@
             </li>
           </ul>
 
-          <form class="form-inline my-2 my-lg-0" id="login-form" onsubmit="return login()">
+          <form class="form-inline my-2 my-lg-0" method="GET" id="login-form"">
             <input
               type="email"
               class="form-control mr-sm-2"
               placeholder="Email Address"
               id="user-email"
-              required
+              required=""
             />
             <input
               type="password"
               class="form-control mr-sm-2"
               placeholder="Password"
               id="user-pass"
-              required
+              required=""
             />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Signin
-            </button>
+            <input type="submit" value="Sign In"/>
           </form>
 
         </div>
@@ -89,27 +87,44 @@
             </h4>
           </div>
           <div id="right" class="col-sm-5">
-            <div class="login-page">
+
+            <div id="container" class="login-page" style="border: 1px solid red;;">
+              <div id="login-container" class="form">
+
+                <div class="title">Login to the portal</div>
+                <form action="#" method="post" id="form">
+
+                  <div class="form-group" style="text-align: left;">
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter username!" required="">
+                  </div>
+
+                  <div class="form-group" style="text-align: left;">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter password!" required="">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="button" value="Login" class="form-btn" id="submit" onclick="authorize()">
+                  </div>
+                  <p>Dont have an account? <a href="/forms/signup.html">Sign-Up</a></p>
+                </form>
+              </div>
+            </div>
+            
+           <!--<div class="login-page">
               <div class="form">
-                <form class="register-form">
-                  <input type="text" placeholder="name" />
-                  <input type="password" placeholder="password" />
-                  <input type="text" placeholder="email address" />
-                  <button>create</button>
+                <form class="signup-form" method="POST">
+                  <h3>Create an Account!</h3>
+                  <input type="text" placeholder="name" required="" />
+                  <input type="email" placeholder="email address" required="" />
+                  <input type="password" placeholder="password" required="" />
+                  <button>Sign-Up</button>
                   <p class="message">
                     Already registered? <a href="#">Sign In</a>
                   </p>
                 </form>
-                <form class="login-form">
-                  <input type="text" placeholder="username" />
-                  <input type="password" placeholder="password" />
-                  <button>login</button>
-                  <p class="message">
-                    Not registered?
-                    <a href="./forms/signup.html">Create an account</a>
-                  </p>
-                </form>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -117,7 +132,8 @@
     </div>
 
     <!--Linking javascript file-->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
