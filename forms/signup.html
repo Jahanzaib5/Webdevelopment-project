@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Sign-Up</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- Custom Theme files -->
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- //Custom Theme files -->
-<!-- web font -->
-<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
-<!-- //web font -->
-</head><div class="main-w3layouts wrapper">
-		<h1>Create an Account!</h1>
-		<div class="main-agileinfo">
-			<div class="agileits-top">
-				<form action="#" method="post">
-					<input class="text" type="text" name="Username" placeholder="Username" required="">
-					<input class="text email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="password" name="password" placeholder="Password" required="">
-					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
-					<div class="wthree-text">
-						<label class="anim">
-							<input type="checkbox" class="checkbox" required="">
-							<span>I Agree To The Terms & Conditions</span>
-						</label>
-						<div class="clear"> </div>
-					</div>
-					<input type="submit" value="SIGNUP">
-				</form>
-				<p>Already have an Account? <a href="../index.html"> Login Now!</a></p>
-			</div>
-		</div>
-	</div>
-<body>
-	<!-- main -->
+  <head>
+    <title>Sign-Up</title>
+	<!-- Custom Theme files -->
+
+	<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 	
-</body>
+
+    <link
+      href="../css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+	/>
+	<link rel="stylesheet" href="../css/main.css">
+  </head>
+
+  <div id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <a class="navbar-brand" href="index.html"
+		><img src="../images/talim.png" alt="Logo" width="160" height="50"
+	  /></a>
+	  <button
+		class="navbar-toggler"
+		type="button"
+		data-toggle="collapse"
+		data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent"
+		aria-expanded="false"
+		aria-label="Toggle navigation"
+	  >
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#"
+			  >Universities <span class="sr-only">(current)</span></a
+			>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="#"
+			  >Scholarships <span class="sr-only">(current)</span></a
+			>
+		  </li>
+		  <li class="nav-item active">
+			<a class="nav-link" href="#"
+			  >Jobs <span class="sr-only">(current)</span></a
+			>
+		  </li>
+		</ul>
+
+		<form class="form-inline my-2 my-lg-0" method="GET" id="login-form"">
+		  <input
+			type="email"
+			class="form-control mr-sm-2"
+			placeholder="Email Address"
+			id="user-email"
+			required=""
+		  />
+		  <input
+			type="password"
+			class="form-control mr-sm-2"
+			placeholder="Password"
+			id="user-pass"
+			required=""
+		  />
+		  <input type="submit" value="Sign In"/>
+		</form>
+
+	  </div>
+	</nav>
+  </div>
+
+
+  <div class="main-w3layouts wrapper">
+    <h1>Create an Account!</h1>
+    <div class="main-agileinfo">
+      <div class="agileits-top">
+        <form action="#" method="post">
+          <input
+            class="text"
+            type="text"
+            name="Username"
+            placeholder="Username"
+            required=""
+          />
+          <input
+            class="text email"
+            type="email"
+            name="email"
+            placeholder="Email"
+            required=""
+          />
+          <input
+            class="text"
+            type="password"
+            name="password"
+            placeholder="Password"
+            required=""
+          />
+          <input class="sub" type="submit" value="SIGNUP" />
+        </form>
+        <p>Already have an Account? <a href="../index.html"> Login Now!</a></p>
+      </div>
+    </div>
+  </div>
+  <body>
+    <!-- main -->
+  </body>
 </html>
