@@ -3,7 +3,7 @@ var btn = document.getElementById('submit');
 window.onload = function(){
     window.addEventListener('keypress', function(e){
         if(e.keyCode = '13'){
-            console.log('enter pressed');
+            console.log("Enter pressed:");
         }
     }, false);
 }
@@ -15,10 +15,8 @@ function authorize(){
     username = username.toLowerCase();
 
     if(username == 'admin' && password == 1234){
+        username = username.replace(' ','');
         return authorized();
-
-    }else if(username == null && password == null){
-        alert("Please, Enter details")
 
     }else{
         return deny();
