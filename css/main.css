@@ -1,3 +1,7 @@
+*{
+  transition: 0.6s ease;
+}
+
 body{
   width: 100%;
 }
