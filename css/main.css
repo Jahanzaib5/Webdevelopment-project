@@ -1,58 +1,57 @@
-*{
-  transition: 0.6s ease;
+* {
+    transition: 0.6s ease;
 }
 
-body{
-  width: 100%;
+body {
+    width: 100%;
 }
 
-#nav-bar{
-    width:100%;
+#nav-bar {
+    width: 100%;
     height: 50%;
 }
 
-#nav-bar nav{
-    border: 1px solid red;
+#nav-bar nav {
+    border: 1px solid #2d3f51;
     background-color: #2d3f51;
     padding-left: 9%;
     padding-right: 9%;
 }
 
-.navbar-brand{
+.navbar-brand {
     padding-right: 4%;
 }
 
-
-#nav-bar button{
-    color:white;
+#nav-bar button {
+    color: white;
     border: 1px solid white;
 }
 
-#nav-bar button:hover{
-    background-color:#2d3f51;
+#nav-bar button:hover {
+    background-color: #2d3f51;
     border: 1px solid white;
 }
 
-
-
-#nav-bar ul li a{
+#nav-bar ul li a {
     color: white;
     font-size: 15px;
     font-weight: bold;
 }
 
-#nav-bar ul{
+#nav-bar ul {
     float: left;
 }
 
+
 /*-----------------------------first page----------------------*/
-#first-page{
+
+#first-page {
     color: black;
     background-color: aquamarine;
     padding-top: 3%;
 }
 
-#first-page hr{
+#first-page hr {
     border: 5px solid rgb(92, 102, 92);
     border-radius: 5px;
     margin-top: 5%;
@@ -63,8 +62,9 @@ body{
     width: 500px;
     padding: 8% 0 0;
     margin: auto;
-  }
-  .form {
+}
+
+.form {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -73,14 +73,15 @@ body{
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
+}
 
-  .title{
+.title {
     margin-bottom: 4%;
     font-size: 28px;
     font-weight: bold;
-  }
-  .form input {
+}
+
+.form input {
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -90,8 +91,9 @@ body{
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-  }
-  .form button {
+}
+
+.form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
@@ -104,80 +106,92 @@ body{
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
-  }
-  .form button:hover,.form button:active,.form button:focus {
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
     background: #43A047;
-  }
-  .form .message {
+}
+
+.form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px;
-  }
-  .form .message a {
+}
+
+.form .message a {
     color: #4CAF50;
     text-decoration: none;
-  }
-  .form .register-form {
+}
+
+.form .register-form {
     display: none;
-  }
-  .container {
+}
+
+.container {
     position: relative;
     z-index: 1;
     max-width: 300px;
     margin: 0 auto;
-  }
-  .container:before, .container:after {
+}
+
+.container:before,
+.container:after {
     content: "";
     display: block;
     clear: both;
-  }
-  .container .info {
+}
+
+.container .info {
     margin: 50px auto;
     text-align: center;
-  }
-  .container .info h1 {
+}
+
+.container .info h1 {
     margin: 0 0 15px;
     padding: 0;
     font-size: 36px;
     font-weight: 300;
     color: #1a1a1a;
-  }
-  .container .info span {
+}
+
+.container .info span {
     color: #4d4d4d;
     font-size: 12px;
-  }
-  .container .info span a {
+}
+
+.container .info span a {
     color: #000000;
     text-decoration: none;
-  }
-  .container .info span .fa {
+}
+
+.container .info span .fa {
     color: #EF3B3A;
-  }
-  #left{
+}
+
+#left {
     border: 1px solid red;
     text-align: left;
     width: 100%;
     padding-left: 6%;
     padding-right: 3%;
-  }
+}
 
-  #left h2{
+#left h2 {
     font-size: 6vh;
     margin-top: 10%;
     line-height: 1.4;
-  }
+}
 
-  #left h4{
+#left h4 {
     color: #717579;
-  }
+}
 
-  #right{
+#right {
     border: 1px solid red;
     width: 100%;
-  }
+}
 
 
-
-
-
-  /*-----------------------------------------------------------*/
+/*-----------------------------------------------------------*/
