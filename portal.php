@@ -7,6 +7,14 @@
     <link href="./css/portal.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
+  <?php
+  
+	session_start();
+	if(isset($_SESSION['user']))
+	{
+		echo "<script>alert('Welcome')</script>";
+	}
+  ?>
     <div id="container">
       <nav id="leftnav">
         <div id="logo">
@@ -25,7 +33,7 @@
       </nav>
       <header id="topnav">
         <div id="links">
-          <a href="#">
+          <a href="logout.php?logout">
               Logout
           </a>
         </div>

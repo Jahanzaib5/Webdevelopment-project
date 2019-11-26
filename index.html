@@ -14,10 +14,10 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <div id="nav-bar">
+    <div class="header" id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"
-          ><img src="./images/talim.png" alt="Logo" width="160" height="50"
+          ><img src="./images/site_logo.png" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -49,25 +49,10 @@
               >
             </li>
           </ul>
-
-          <form class="form-inline my-2 my-lg-0" method="GET" id="login-form"">
-            <input
-              type="email"
-              class="form-control mr-sm-2"
-              placeholder="Email Address"
-              id="user-email"
-              required=""
-            />
-            <input
-              type="password"
-              class="form-control mr-sm-2"
-              placeholder="Password"
-              id="user-pass"
-              required=""
-            />
-            <input type="submit" value="Sign In"/>
-          </form>
-
+		<form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
         </div>
       </nav>
     </div>
@@ -82,17 +67,16 @@
             </h2>
             <hr />
             <h4>
-              Your place of finding networks, opportunities and much more by
-              signing in to this web portal
+              Your place of finding networks, opportunities and much more by signing in to this web portal and enjoy all the facilites provides within
             </h4>
           </div>
           <div id="right" class="col-sm-5">
 
-            <div id="container" class="login-page" style="border: 1px solid red;;">
+            <div id="container" class="login-page">
               <div id="login-container" class="form">
 
                 <div class="title">Login to the portal</div>
-                <form action="#" method="post" id="form">
+                <form action="process.php" method="POST" id="form">
 
                   <div class="form-group" style="text-align: left;">
                     <label for="username">Username: </label>
@@ -105,33 +89,50 @@
                   </div>
 
                   <div class="form-group">
-                    <input type="button" value="Login" class="form-btn" id="submit" onclick="authorize()">
+                    <button class="btn btn-success mt-3" name="Login">Login</button>
                   </div>
                   <p>Dont have an account? <a href="./forms/signup.html">Sign-Up</a></p>
                 </form>
               </div>
-            </div>
-            
-           <!--<div class="login-page">
-              <div class="form">
-                <form class="signup-form" method="POST">
-                  <h3>Create an Account!</h3>
-                  <input type="text" placeholder="name" required="" />
-                  <input type="email" placeholder="email address" required="" />
-                  <input type="password" placeholder="password" required="" />
-                  <button>Sign-Up</button>
-                  <p class="message">
-                    Already registered? <a href="#">Sign In</a>
-                  </p>
-                </form>
-              </div>-->
+			  </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+      <!-----------------------------------Second page ----------------------------->
+      <div id="second-page">
+      	<div class="container">
+		  <div class="row">
+			<div class="col-sm-6">
+			  <h4>Start working with top level international graduates - post a fresh graduate job, internship or a proect and get an instant reply</h4>
+			</div>
+			<div id="batn" class="col-sm-6">
+		  	<a href='forms/signup.html'>
+			  <button type="button" class="btn btn-outline-secondary">Signup to the portal</button>
+				</a>
+			</div>
+		  </div>
+		</div>
+      </div>
     <!--Linking javascript file-->
+    <script>
+		window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("nav-bar");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	  </script>
     <script src="./js/main.js"></script>
     <script src="index.js"></script>
     <script
@@ -148,6 +149,7 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script>
+    >
+	</script>
   </body>
 </html>
