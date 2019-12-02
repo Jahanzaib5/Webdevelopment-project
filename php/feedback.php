@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>First-project</title>
-
-    <!--Linking css file-->
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-    
- 
-    
-    <link
+<html>
+<head>
+	<title>
+		Assigment
+	</title>
+	<link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-  </head>
-  <body>
-    <!--Navigation bar-->
-    <div class="header" id="nav-bar">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+	<body>
+	
+	<!--Navigation bar-->
+    <div class="header" id="nav-bar" style="margin-bottom: -15%;">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./images/site_logo.png" alt="Logo" width="180" height="30"
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -34,7 +31,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#"
@@ -56,112 +53,40 @@
 			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
-       <p style="color: white; margin-left: 2%;float: none; margin-bottom: -0%"> or <a href="php/feedback.php" style="color: white;">Feedback?</a></p>
         </div>
       </nav>
     </div>
-    <!------------------------------first page------------------------------------------->
-    <div id="first-page">
-      <div class="container-fluid">
-        <div class="row">
-          <div id="left" class="col-sm-7">
-            <h2>
-              Find your choice of Universities, Scholarships, Jobs in this web
-              portal!
-            </h2>
-            <hr />
-            <h4>
-              Your place of finding networks, opportunities and much more by signing in to this web portal and enjoy all the facilites provides within
-            </h4>
-          </div>
-          <div id="right" class="col-sm-5">
-
-            <div id="container" class="login-page">
-              <div id="login-container" class="form">
-
-                <div class="title">Login to the portal</div>
-                <form action="process.php" method="POST" id="form">
-
-                  <div class="form-group" style="text-align: left;">
-                    <label for="username">Username: </label>
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter username!" required="">
-                  </div>
-
-                  <div class="form-group" style="text-align: left;">
-                    <label for="password">Password: </label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter password!" required="">
-                  </div>
-
-                  <div class="form-group">
-                    <button class="btn btn-success mt-3" name="Login">Login</button>
-                  </div>
-                  <p>Dont have an account? <a href="./forms/signup.html">Sign-Up</a></p>
-                </form>
-              </div>
+	
+		<div class="container-fluid" style="width: 40%; background: #f0f5f5;  padding-bottom: 2%; padding-top: 2%;">
+			<h3 style="text-align: center; padding-bottom: 2%;">Give your precious Feedback!</h3>
+			<form action="connectDatabase.php" method="post">
+			  <div class="form-group">
+				<label for="name">Name</label>
+				<input type="text" class="form-control" id="name"  name="name">
 			  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-----------------------------------Second page ----------------------------->
-      <div id="second-page">
-      	<div class="container">
-		  <div class="row">
-			<div class="col-sm-6">
-			  <h4>Start working with top level international graduates - post a fresh graduate job, internship or a proect and get an instant reply</h4>
-			</div>
-			<div id="batn" class="col-sm-6">
-		  	<a href='forms/signup.html'>
-			  <button type="button" class="btn btn-outline-secondary">Signup to the portal</button>
-				</a>
-			</div>
-		  </div>
+			  <div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" aria-describedby="email"  name="email">
+			  </div>
+			  <div class="form-group">
+				<label for="subject">Subject</label>
+				<input type="text" class="form-control" id="subject"  name="subject">
+			  </div>
+			  <div class="form-group">
+				<p>Comments</p>
+				<textarea rows = "5" cols = "69" name = "comments">
+					
+				 </textarea>
+			  </div>
+			  <button style="margin-top:2%; background: maroon; width: 25%;" type="submit" class="btn btn-primary">Submit</button>
+			  <br>
+			</form>
 		</div>
-      </div>
-      <!---------------------------------------third page-->
-      <div id="third_page">
-      	<div class="container">
-		  <div class="row">
-			<div class="col-sm-6">
-				<img class="img-responsive" src="./images/Capture1.JPG" alt="Chania" style="width:80%">
-				<h3>Find exclusive jobs, internships and short term projects</h3>
-				<span style="font-size: 3em; color: Tomato;">
-				  <i class="fas fa-camera"></i>
-				</span>
-		  
-			  </div>
-			  <div class="col-sm-6">
-			  	<img class="img-responsive two" src="./images/Capture2.JPG" alt="Chania">
-			  	<h3>Conect with other people around the globe and make great connections</h3>
-			  </div>
-			</div>
-		  </div>
-      </div>
-      <!---------------------------------------------fourth page------------------->
-      <div id="fourth_page">
-      	<div class="container">
-      		<div  class="row">
-      			<div id="hell" class="col-sm-6">
-      				<h2>How can consuldent help me?</h2>
-      				<h3>Get started today to avail graduate student opportunities all over the globe.</h3>
-      				<ul>
-						<li><a href="#">Get me a job or an internship</a></li>
-      					<li><a href="#">Get me a scholarship</a></li>
-      					<li><a href="./php/feedback.php">Want to give Feedback?</a></li>
-      				</ul>
-      			</div>
-      			<div id="hello" class="col-sm-6">
-      				<img class="img-responsive" src="./images/Capture3.JPG" alt="Chania" style="width:120%">	
-      			</div>
-      		</div>
-      	</div>
-      </div>
-      
-      <!---------------------------------------------footer---------------------->
+		<!---------------------------------------------footer---------------------->
       
       
        <!--last-last one-->
-    <div class="container last">
+    <div class="container last" style="border-top: 1px solid rgb(153, 146, 146);">
         <div class="row">
             <div class="col-sm-6 left_one">
                 <h3><a href="#">ABOUT</a></h3>
@@ -191,7 +116,7 @@
             <div class="col-sm-1 right_one">
                 <h3>PARTNERS</h3>
                 <ul>
-                    <li><img src="images/last_last_one/01.jpg" class="img-fluid" alt="Responsive image" width="420" /></li>
+                    <li><img src="images/last_last_one/01.jpg" class="img-fluid" alt="Responsive image" width="30" /></li>
                     <li><img src="images/last_last_one/02.svg" class="img-fluid" alt="Responsive image" width="30" /></li>
                 </ul>
 
@@ -201,10 +126,10 @@
     </div>
 
     <!--footer-->
-    <div class="container footer">
+    <div class="container footer" >
         <div class="row">
             <div class="col-sm-6 left_one">
-                <a href="index.html"><img src="./images/logo.jpg" class="img-fluid" alt="Responsive image" width='145'/></a>
+                <a href="index.html"><img src="../images/logo.jpg" class="img-fluid" alt="Responsive image" width='140'/></a>
                 <div class="btn-group dropup">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                         English
@@ -232,10 +157,28 @@
 
             </div>
         </div>      
-      
-      
-    <!--Linking javascript file-->
-    <script>
+	
+	
+
+
+	<script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    >
+	</script>
+	
+	<script>
 		window.onscroll = function() {myFunction()};
 
 		// Get the header
@@ -253,23 +196,7 @@
 		  }
 		}
 	  </script>
-    <script src="./js/main.js"></script>
-    <script src="index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    >
-	</script>
-  </body>
+	
+	
+	</body>
 </html>
