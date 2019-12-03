@@ -1,3 +1,10 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  transition: 0.6s ease;
+}
+
 body{
   width: 100%;
 }
@@ -8,10 +15,11 @@ body{
 }
 
 #nav-bar nav{
-    border: 1px solid red;
     background-color: #2d3f51;
-    padding-left: 9%;
-    padding-right: 9%;
+    padding-left: 6%;
+    padding-right: 7%;
+	padding-top: 1%;
+	padding-bottom: 1%
 }
 
 .navbar-brand{
@@ -26,37 +34,52 @@ body{
 
 #nav-bar button:hover{
     background-color:#2d3f51;
-    border: 1px solid white;
 }
 
+.collapse{
+	padding-left: 2%;
+}
+
+.collapse ul li{
+	padding-left: 0%;
+}
 
 
 #nav-bar ul li a{
     color: white;
     font-size: 15px;
     font-weight: bold;
+	cursor: pointer;
 }
 
-#nav-bar ul{
-    float: left;
+#nav-bar ul li a:hover{
+	cursor: pointer;
+	color: grey;
 }
 
 /*-----------------------------first page----------------------*/
 #first-page{
     color: black;
-    background-color: aquamarine;
+    background-image: url("istock.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
     padding-top: 3%;
+	width: 100%;
+	padding-left: 5%;
+	padding-right: 1%;
 }
 
 #first-page hr{
-    border: 5px solid rgb(92, 102, 92);
-    border-radius: 5px;
+    border: 5px solid #ada69f ;
+    border-radius: 0px;
     margin-top: 5%;
     margin-bottom: 2%;
 }
 
 .login-page {
-    width: 500px;
+    width: 100%;
     padding: 8% 0 0;
     margin: auto;
   }
@@ -116,41 +139,9 @@ body{
   .form .register-form {
     display: none;
   }
-  .container {
-    position: relative;
-    z-index: 1;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  .container:before, .container:after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-  .container .info {
-    margin: 50px auto;
-    text-align: center;
-  }
-  .container .info h1 {
-    margin: 0 0 15px;
-    padding: 0;
-    font-size: 36px;
-    font-weight: 300;
-    color: #1a1a1a;
-  }
-  .container .info span {
-    color: #4d4d4d;
-    font-size: 12px;
-  }
-  .container .info span a {
-    color: #000000;
-    text-decoration: none;
-  }
-  .container .info span .fa {
-    color: #EF3B3A;
+
   }
   #left{
-    border: 1px solid red;
     text-align: left;
     width: 100%;
     padding-left: 6%;
@@ -158,22 +149,266 @@ body{
   }
 
   #left h2{
-    font-size: 6vh;
-    margin-top: 10%;
-    line-height: 1.4;
+	color: white;
+	font-size: 7vh;
+	margin-top: 10%;
+	line-height: 1.4;
+	  	  
+	  
   }
 
   #left h4{
-    color: #717579;
+    color: #f3f2f1;
+	  margin-top: 3%;
+	  line-height: 1.5;
   }
 
   #right{
-    border: 1px solid red;
     width: 100%;
   }
 
 
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	opacity: 100
+}
 
 
 
-  /*-----------------------------------------------------------*/
+
+
+
+  /*-------------------------------second page----------------------------*/
+
+#second-page{
+	width: 100%;
+	padding-top: 6%;
+	padding-bottom: 4%;
+	background-color: #f1f1f1;
+	padding-left: 14%;
+}
+
+#second-page h4{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #333;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #2d3f51;
+}
+
+#batn{
+	margin-top: 3%;
+	padding-left: 10%;
+}
+
+#batn button{
+	color: white;
+	border-radius: 50px;
+	border: 1px solid black;
+	background-color: forestgreen;
+	height: 60%;
+}
+
+#batn button:hover{
+	border: 2px solid black;
+	color: black;
+	background-color: white;
+}
+
+/*-------------------------------3th page----------------------------*/
+#third_page{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+
+#third_page .col-sm-6 .two{
+	padding-top: 15%;
+	width: 90%;
+}
+
+#third_page .col-sm-6 img{
+	margin-bottom: 6%;
+}
+
+#third_page .col-sm-6 h3{
+	color: #2d3f51;
+    font-size: 25px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*-------------------------------4th page----------------------------*/
+#fourth_page{
+	margin-top: 6%;
+	background: #f1f1f1;
+}
+
+#hello{
+	margin-top: 3%;
+}
+
+#hell{
+	margin-top: 10%;
+}
+
+#hell h2{
+	font-size: 28px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #30a9de;
+	margin-bottom: 3%;
+	
+}
+#hell h3{
+	font-size: 25px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 1.5;
+	margin-bottom: 3%;
+}
+
+#hell ul{
+	color: #fff;
+	font-size: 20px;
+}
+
+#hell ul li{
+	list-style-type: none;
+	width: 70%;
+	padding: 2%;
+	margin-left: -7%;
+	line-height: 1.5;
+	margin-bottom:4%;
+	background: #2c3e50;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#hell ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+/*-------------------------------------last last one-----------------------------------------*/
+
+.last {
+    border-bottom: 1px solid rgb(153, 146, 146);
+    margin-bottom: 2%;
+}
+
+.last ul{
+	list-style-type: none;
+	margin-left: -25%;
+}
+
+.last .row {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.last .left_one {
+    margin-right: 2%;
+}
+
+.last h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #989898;
+}
+
+.last .left_one p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #4e4d4d;
+}
+
+.last .left_one h3 a {
+    text-decoration: none;
+    color: #989898;
+}
+
+.last ul li {
+    line-height: 35px;
+}
+
+.last ul li a {
+    color: #4e4d4d;
+    font-size: 15px;
+}
+
+.last .right_one img {
+    opacity: 0.5;
+    transition: 0.2s ease;
+}
+
+.last .right_one img:hover {
+    opacity: 10;
+}
+
+
+/*----------------------------------footer------------------------------------------------------------------------*/
+
+.footer {
+    margin-bottom: 2%;
+}
+
+.footer .left_one img {
+    margin-right: 2%;
+}
+
+.footer .left_one .dropup {
+    margin-top: -3%;
+}
+
+.footer .left_one button {
+    border-radius: 30px;
+    background: #898a8b;
+    border: none;
+    margin-left: 3%;
+	margin-top: 25%;
+}
+
+.footer .left_one p {
+    width: 52%;
+    font-size: 13px;
+    float: right;
+    margin-top: 2%;
+    color: #4e4d4d;
+}
+
+.footer .right_one ul {
+    margin-top: 1.2%;
+    width: 70%;
+    margin-left: 14%;
+}
+
+.footer .right_one ul li {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.footer .right_one .icons {
+    width: 100%;
+    float: right;
+    margin-top: -3%;
+}
+
+.footer .right_one .icons i {
+    margin-right: 4%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer .right_one .icons i:hover {
+    opacity: 2;
+}
+
+
+
+#smallcard{
+	border: 1px solid red;
+}
