@@ -21,80 +21,69 @@
 	<link rel="stylesheet" href="../css/main.css">
   </head>
 
-  <div id="nav-bar">
-	<nav class="navbar navbar-expand-lg navbar-light">
-	  <a class="navbar-brand" href="index.html"
-		><img src="../images/talim.png" alt="Logo" width="160" height="50"
-	  /></a>
-	  <button
-		class="navbar-toggler"
-		type="button"
-		data-toggle="collapse"
-		data-target="#navbarSupportedContent"
-		aria-controls="navbarSupportedContent"
-		aria-expanded="false"
-		aria-label="Toggle navigation"
-	  >
-		<span class="navbar-toggler-icon"></span>
-	  </button>
+   <div class="header" id="nav-bar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-		  <li class="nav-item active">
-			<a class="nav-link" href="#"
-			  >Universities <span class="sr-only">(current)</span></a
-			>
-		  </li>
-		  <li class="nav-item active">
-			<a class="nav-link" href="#"
-			  >Scholarships <span class="sr-only">(current)</span></a
-			>
-		  </li>
-		  <li class="nav-item active">
-			<a class="nav-link" href="#"
-			  >Jobs <span class="sr-only">(current)</span></a
-			>
-		  </li>
-		</ul>
-
-		<form class="form-inline my-2 my-lg-0" method="GET" id="login-form"">
-		  <input
-			type="email"
-			class="form-control mr-sm-2"
-			placeholder="Email Address"
-			id="user-email"
-			required=""
-		  />
-		  <input
-			type="password"
-			class="form-control mr-sm-2"
-			placeholder="Password"
-			id="user-pass"
-			required=""
-		  />
-		  <input type="submit" value="Sign In"/>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Universities <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Scholarships <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Jobs <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+		<form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
-
-	  </div>
-	</nav>
-  </div>
+       <p style="color: white; margin-left: 2%;float: none; margin-bottom: -0%"> or <a href="php/feedback.php" style="color: white;">Feedback?</a></p>
+        </div>
+      </nav>
+    </div>
+   <body>
 
 
   <div class="main-w3layouts wrapper">
     <h1>Create an Account!</h1>
     <div class="main-agileinfo">
       <div class="agileits-top">
-        <form action="#" method="post">
+        <form action="connect.php" method="post">
           <input
             class="text"
+			id="username"
             type="text"
-            name="Username"
+            name="username"
             placeholder="Username"
             required=""
           />
           <input
             class="text email"
             type="email"
+			id="email"
             name="email"
             placeholder="Email"
             required=""
@@ -106,13 +95,15 @@
             placeholder="Password"
             required=""
           />
+		  
           <input class="sub" type="submit" value="SIGNUP" />
         </form>
         <p>Already have an Account? <a href="../index.html"> Login Now!</a></p>
       </div>
     </div>
   </div>
-  <body>
+  
+  <script>
     <!-- main -->
   </body>
 </html>

@@ -4,10 +4,7 @@
     <title>First-project</title>
 
     <!--Linking css file-->
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-    
- 
-    
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -17,10 +14,10 @@
   </head>
   <body>
     <!--Navigation bar-->
-    <div class="header" id="nav-bar">
+    <div id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./images/site_logo.png" alt="Logo" width="180" height="30"
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../images/site_logo.png" alt="Logo"  width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -34,134 +31,45 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-				<a class="nav-link" href="#" onclick="recall()"
+              <a class="nav-link" href="#"
                 >Universities <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="recall()"
+              <a class="nav-link" href="#"
                 >Scholarships <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="recall()"
+              <a class="nav-link" href="#"
                 >Jobs <span class="sr-only">(current)</span></a
               >
             </li>
           </ul>
-		<form class="form-inline my-2 my-lg-0">
+          <form class="form-inline my-2 my-lg-0">
 			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 		</form>
        <p style="color: white; margin-left: 2%;float: none; margin-bottom: -0%"> or <a href="php/feedback.php" style="color: white;">Feedback?</a></p>
+
         </div>
       </nav>
     </div>
     <!------------------------------first page------------------------------------------->
-    <div id="first-page">
-      <div class="container-fluid">
-        <div class="row">
-          <div id="left" class="col-sm-7">
-            <h2>
-              Find your choice of Universities, Scholarships, Jobs in this web
-              portal!
-            </h2>
-            <hr />
-            <h4>
-              Your place of finding networks, opportunities and much more by signing in to this web portal and enjoy all the facilites provides within
-            </h4>
-          </div>
-          <div id="right" class="col-sm-5">
-
-            <div id="container" class="login-page">
-              <div id="login-container" class="form">
-
-                <div class="title">Login to the portal</div>
-                <form action="process.php" method="POST" id="form">
-
-                  <div class="form-group" style="text-align: left;">
-                    <label for="username">Username: </label>
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Enter username!" required="">
-                  </div>
-
-                  <div class="form-group" style="text-align: left;">
-                    <label for="password">Password: </label>
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter password!" required="">
-                  </div>
-
-                  <div class="form-group">
-                    <button class="btn btn-success mt-3" name="Login">Login</button>
-                  </div>
-                  <p>Dont have an account? <a href="./forms/signup.html">Sign-Up</a></p>
-                </form>
-              </div>
-			  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-----------------------------------Second page ----------------------------->
-      <div id="second-page">
-      	<div class="container">
-		  <div class="row">
-			<div class="col-sm-6">
-			  <h4>Start working with top level international graduates - post a fresh graduate job, internship or a proect and get an instant reply</h4>
-			</div>
-			<div id="batn" class="col-sm-6">
-		  	<a href='forms/signup.html'>
-			  <button type="button" class="btn btn-outline-secondary">Signup to the portal</button>
-				</a>
-			</div>
-		  </div>
-		</div>
-      </div>
-      <!---------------------------------------third page-->
-      <div id="third_page">
-      	<div class="container">
-		  <div class="row">
-			<div class="col-sm-6">
-				<img class="img-responsive" src="./images/Capture1.JPG" alt="Chania" style="width:80%">
-				<h3>Find exclusive jobs, internships and short term projects</h3>
-				<span style="font-size: 3em; color: Tomato;">
-				  <i class="fas fa-camera"></i>
-				</span>
-		  
-			  </div>
-			  <div class="col-sm-6">
-			  	<img class="img-responsive two" src="./images/Capture2.JPG" alt="Chania">
-			  	<h3>Conect with other people around the globe and make great connections</h3>
-			  </div>
-			</div>
-		  </div>
-      </div>
-      <!---------------------------------------------fourth page------------------->
-      <div id="fourth_page">
-      	<div class="container">
-      		<div  class="row">
-      			<div id="hell" class="col-sm-6">
-      				<h2>How can consuldent help me?</h2>
-      				<h3>Get started today to avail graduate student opportunities all over the globe.</h3>
-      				<ul>
-						<li><a href="#">Get me a job or an internship</a></li>
-      					<li><a href="#">Get me a scholarship</a></li>
-      					<li><a href="./php/feedback.php">Want to give Feedback?</a></li>
-      				</ul>
-      			</div>
-      			<div id="hello" class="col-sm-6">
-      				<img class="img-responsive" src="./images/Capture3.JPG" alt="Chania" style="width:120%">	
-      			</div>
-      		</div>
-      	</div>
-      </div>
-      
+	<div class="container" style="margin-top: 4%; margin-bottom: 4%; text-align: center;">
+		<h1>You have been registered successfully!</h1>
+		<h2>Go to <a href="../index.html">Login</a> page to signin to the portal</h2>
+	</div>
+   
+   
       <!---------------------------------------------footer---------------------->
       
       
        <!--last-last one-->
-    <div class="container last">
+    <div class="container last" style="border-top: 1px solid black;">
         <div class="row">
             <div class="col-sm-6 left_one">
                 <h3><a href="#">ABOUT</a></h3>
@@ -234,34 +142,11 @@
         </div>      
       
       
+    
+    
+    
+
     <!--Linking javascript file-->
-    
-    <script>
-		function recall()
-		{
-			alert("Login to the portal first!");
-		}
-	  </script>
-    
-    
-    <script>
-		window.onscroll = function() {myFunction()};
-
-		// Get the header
-		var header = document.getElementById("nav-bar");
-
-		// Get the offset position of the navbar
-		var sticky = header.offsetTop;
-
-		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-		function myFunction() {
-		  if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		  } else {
-			header.classList.remove("sticky");
-		  }
-		}
-	  </script>
     <script src="./js/main.js"></script>
     <script src="index.js"></script>
     <script
@@ -278,7 +163,6 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    >
-	</script>
+    ></script>
   </body>
 </html>

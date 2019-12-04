@@ -121,7 +121,6 @@ main{
     left: 200px;
     height: calc(100% - 50px);
     width: calc(100% - 200px);
-    background-color: #ecf0f1;
 }
 
 #minimize{
@@ -165,4 +164,28 @@ main{
 
 #maximize:hover{
     background-color: #1e90ff;
+}
+
+#action-container{
+    width: 80%;
+    margin: 2em auto;
+    height: calc(100% - 4em);
+    background-color: #dadada;
+}
+
+.title{
+    width: 100%;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+#smallcard{
+	border: 1px solid red;
+	width: 50%;
 }

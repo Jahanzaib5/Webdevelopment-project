@@ -1,12 +1,5 @@
 var btn = document.getElementById('submit');
 
-window.onload = function(){
-    window.addEventListener('keypress', function(e){
-        if(e.keyCode = '13'){
-            console.log("Enter pressed:");
-        }
-    }, false);
-}
 
 function authorize(){
     var username = document.getElementById('username').value;
@@ -15,7 +8,7 @@ function authorize(){
     username = username.toLowerCase();
 
     if(username == 'admin' && password == 1234){
-        username = username.replace(' ','');
+        username = username.replace('');
         return authorized();
 
     }else{
@@ -29,5 +22,5 @@ function deny(){
 }
 
 function authorized(){
-    location.assign('./portal.html')
+    location.assign('./portal.php')
 }
