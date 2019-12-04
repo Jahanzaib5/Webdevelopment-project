@@ -9,26 +9,27 @@ body{
   width: 100%;
 }
 
-#nav-bar{
-    width:100%;
-    height: 50%;
+#nav-bar {
+    width: 100%;
+    height: 20%;
 }
 
 #nav-bar nav{
-    background-color: #2d3f51;
+    background-color: #b6aea8;
+	background: linear-gradient(to top, #9f9893, #cdc4bd);
+	background: -o-linear-gradient(to top, #9f9893, #cdc4bd);
     padding-left: 6%;
     padding-right: 7%;
 	padding-top: 1%;
 	padding-bottom: 1%
 }
 
-.navbar-brand{
+.navbar-brand {
     padding-right: 4%;
 }
 
-
-#nav-bar button{
-    color:white;
+#nav-bar button {
+    color: white;
     border: 1px solid white;
 }
 
@@ -57,8 +58,10 @@ body{
 	color: grey;
 }
 
+
 /*-----------------------------first page----------------------*/
-#first-page{
+
+#first-page {
     color: black;
     background-image: url("istock.jpg");
 	height: 100%;
@@ -82,8 +85,9 @@ body{
     width: 100%;
     padding: 8% 0 0;
     margin: auto;
-  }
-  .form {
+}
+
+.form {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -92,14 +96,15 @@ body{
     padding: 45px;
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
+}
 
-  .title{
+.title {
     margin-bottom: 4%;
     font-size: 28px;
     font-weight: bold;
-  }
-  .form input {
+}
+
+.form input {
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -109,34 +114,41 @@ body{
     padding: 15px;
     box-sizing: border-box;
     font-size: 14px;
-  }
-  .form button {
+}
+
+.form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background: #4CAF50;
+    background: #B4DDB7;
     width: 100%;
     border: 0;
     padding: 15px;
-    color: #FFFFFF;
+    color: #364236;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
-  }
-  .form button:hover,.form button:active,.form button:focus {
-    background: #43A047;
-  }
-  .form .message {
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #a2c6a4;
+}
+
+.form .message {
     margin: 15px 0 0;
     color: #b3b3b3;
     font-size: 12px;
-  }
-  .form .message a {
+}
+
+.form .message a {
     color: #4CAF50;
     text-decoration: none;
-  }
-  .form .register-form {
+}
+
+.form .register-form {
     display: none;
   }
 
@@ -146,7 +158,7 @@ body{
     width: 100%;
     padding-left: 6%;
     padding-right: 3%;
-  }
+}
 
   #left h2{
 	color: white;
@@ -207,8 +219,8 @@ body{
 #batn button{
 	color: white;
 	border-radius: 50px;
-	border: 1px solid black;
-	background-color: forestgreen;
+	border: none;
+	background-color: #a2d5a6;
 	height: 60%;
 }
 
@@ -300,6 +312,111 @@ body{
 .last ul{
 	list-style-type: none;
 	margin-left: -25%;
+}
+
+.last .row {
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+.last .left_one {
+    margin-right: 2%;
+}
+
+.last h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #989898;
+}
+
+.last .left_one p {
+    font-size: 15px;
+    line-height: 26px;
+    color: #4e4d4d;
+}
+
+.last .left_one h3 a {
+    text-decoration: none;
+    color: #989898;
+}
+
+.last ul li {
+    line-height: 35px;
+}
+
+.last ul li a {
+    color: #4e4d4d;
+    font-size: 15px;
+}
+
+.last .right_one img {
+    opacity: 0.5;
+    transition: 0.2s ease;
+}
+
+.last .right_one img:hover {
+    opacity: 10;
+}
+
+
+/*----------------------------------footer------------------------------------------------------------------------*/
+
+.footer {
+    margin-bottom: 2%;
+}
+
+.footer .left_one img {
+    margin-right: 2%;
+}
+
+.footer .left_one .dropup {
+    margin-top: -3%;
+}
+
+.footer .left_one button {
+    border-radius: 30px;
+    background: #898a8b;
+    border: none;
+    margin-left: 3%;
+	margin-top: 25%;
+}
+
+.footer .left_one p {
+    width: 52%;
+    font-size: 13px;
+    float: right;
+    margin-top: 2%;
+    color: #4e4d4d;
+}
+
+.footer .right_one ul {
+    margin-top: 1.2%;
+    width: 70%;
+    margin-left: 14%;
+}
+
+.footer .right_one ul li {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.footer .right_one .icons {
+    width: 100%;
+    float: right;
+    margin-top: -3%;
+}
+
+.footer .right_one .icons i {
+    margin-right: 4%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer .right_one .icons i:hover {
+    opacity: 2;
 }
 
 .last .row {
