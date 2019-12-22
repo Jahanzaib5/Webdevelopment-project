@@ -14,10 +14,10 @@
 	<body>
 	
 	<!--Navigation bar-->
-    <div class="header" id="nav-bar" style="margin-bottom: -15%;">
+    <div class="header" id="nav-bar" style="margin-bottom: 0%;">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html"
-          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
+          ><img src="../images/site_logo.jpg" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -56,8 +56,10 @@
         </div>
       </nav>
     </div>
+    
+    <!-------------------------form----------------------------->
 	
-		<div class="container-fluid" style="width: 40%; background: #f0f5f5;  padding-bottom: 2%; padding-top: 2%;">
+		<div class="container-fluid" style="width: 40%; background: #f0f5f5;  padding-bottom: 2%; padding-top: 2%; z-index: 0;">
 			<h3 style="text-align: center; padding-bottom: 2%;">Give your precious Feedback!</h3>
 			<form action="connectDatabase.php" method="post">
 			  <div class="form-group">
@@ -65,9 +67,29 @@
 				<input type="text" class="form-control" id="name"  name="name">
 			  </div>
 			  <div class="form-group">
+				  <label>Country</label>
+				  <select class="form-control" id="sel1" name="country">
+				  	<option></option>
+					<option>Tajikistan</option>
+					<option>Pakistan</option>
+					<option>Kyrgyzstan</option>
+					<option>Kazakhstan</option>
+				  </select>
+				</div>
+			  <div class="form-group">
 				<label for="email">Email</label>
 				<input type="email" class="form-control" id="email" aria-describedby="email"  name="email">
 			  </div>
+			  
+			  <div class="form-group">
+			  	<label for="email">Which area interest you?</label>
+			  	<br>
+				  <label class="checkbox-inline"><input type="checkbox" value="">Scholarhips</label>
+					<label class="checkbox-inline"><input type="checkbox" value="">Internships</label>
+					<label class="checkbox-inline"><input type="checkbox" value="">Jobs</label>
+			</div>
+			  
+			  
 			  <div class="form-group">
 				<label for="subject">Subject</label>
 				<input type="text" class="form-control" id="subject"  name="subject">

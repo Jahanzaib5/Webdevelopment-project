@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>First-project</title>
+    <title>Bloom</title>
 
     <!--Linking css file-->
     <link href="css/main.css" rel="stylesheet" type="text/css" />
@@ -20,7 +20,7 @@
     <div class="header" id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html"
-          ><img src="./images/site_logo.png" alt="Logo" width="180" height="30"
+          ><img src="./images/site_logo.jpg" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -80,7 +80,7 @@
               <div id="login-container" class="form">
 
                 <div class="title">Login to the portal</div>
-                <form action="process.php" method="POST" id="form">
+                <form action="./php/process.php" method="POST" id="form" onsubmit="authorize()">
 
                   <div class="form-group" style="text-align: left;">
                     <label for="username">Username: </label>
@@ -217,7 +217,7 @@
                         <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> Russian</a>
                     </div>
                 </div>
-                <p>© Consuldents 2019 - All rights reserved</p>
+                <p>© Cac.Bloom 2019 - All rights reserved</p>
             </div>
             <div class="col-sm-6 right_one">
                 <ul>

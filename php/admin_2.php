@@ -11,6 +11,7 @@ $db = "internship_DB";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
+$website = $_POST['website'];
 $comment = $_POST['comments']; 
 if (!$con)
   {
@@ -37,13 +38,13 @@ else{
 	   }
 	   // Create table
 	   mysqli_select_db( $con, $db);
-	   $sql = "CREATE TABLE internship(Name varchar(255), Email varchar(255), Subject varchar(255), Comment varchar(255))";
+	   $sql = "CREATE TABLE internship(Name varchar(255), Email varchar(255),Website varchar(255), Subject varchar(255), Comment varchar(255))";
 	   // Execute query
 	   mysqli_query($con, $sql);
 	}
 	else{
 	   mysqli_select_db($con, $db);
-	   $sql="INSERT INTO internship(Name, Email, Subject, Comment) VALUES('$name', '$email', '$subject', '$comment')";
+	   $sql="INSERT INTO internship(Name, Email, Website, Subject, Comment) VALUES('$name', '$email', '$website', '$subject', '$comment')";
 	   //mysqli_query($con, $sqli); 
 
 	   if (!mysqli_query($con, $sql)){

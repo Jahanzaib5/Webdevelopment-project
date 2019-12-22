@@ -10,6 +10,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
 
     <link
       href="../css/style.css"
@@ -20,27 +21,11 @@
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div class="header" id="nav-bar">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../index.html"
-          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
    <div class="header" id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html"
-          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
+          ><img src="../images/site_logo.jpg" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -81,15 +66,15 @@
         </div>
       </nav>
     </div>
-   <body>
 
 
-  <div class="main-w3layouts wrapper">
-    <h1>Create an Account!</h1>
+  <div class="main-w3layouts wrapper" style="color: black;">
+    <h1 style="color: black;">Create an Account!</h1>
     <div class="main-agileinfo">
       <div class="agileits-top">
-        <form action="connect.php" method="post">
+        <form action="connect.php" method="post" style="color: black;">
           <input
+           style="color: black;"
             class="text"
 			id="username"
             type="text"
@@ -98,6 +83,7 @@
             required=""
           />
           <input
+           style="color: black;"
             class="text email"
             type="email"
 			id="email"
@@ -106,6 +92,7 @@
             required=""
           />
           <input
+           style="color: black;"
             class="text"
             type="password"
             name="password"
@@ -113,14 +100,90 @@
             required=""
           />
 		  
-          <input class="sub" type="submit" value="SIGNUP" />
+          <input style="width: 94%;" class="sub" type="submit" value="SIGNUP"/>
         </form>
         <p>Already have an Account? <a href="../index.html"> Login Now!</a></p>
       </div>
     </div>
   </div>
   
-  <script>
+  <!---------------------------------------------footer---------------------->
+      
+      
+       <!--last-last one-->
+    <div class="container last">
+        <div class="row">
+            <div class="col-sm-6 left_one">
+                <h3><a href="#">ABOUT</a></h3>
+                <p>
+                    We are committed to helping graduate students and provide them with opportunities that optimizes their true potential. Using technology as our leverage, Consuldents reach is un-paralleled and we have students from every university, making it a one big universe for graduate student opportunities provider in all over the world. At Consuldents, however, we believe our success factor is only one metric and that is customer satisfaction and we are driven by our goal to provide students best graduate student opportunities that they can avail while in their universities.
+                </p>
+            </div>
+            <div class="col-sm-2 middle_one">
+                <h3>FIND OUT MORE</h3>
+                <ul>
+                    <li><a href="#">How does it work?</a></li>
+                    <li><a href="#">A trusted service</a></li>
+                    <li><a href="#">Help centre</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 middle_two">
+                <h3>EXLORE</h3>
+                <ul>
+                    <li><a href="#">Insurgence</a></li>
+                    <li><a href="#">Terms of Agreement</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Professionals</a></li>
+                    <li><a href="#">Mobile app(soon)</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-1 right_one">
+                <h3>PARTNERS</h3>
+                <ul>
+                    <li><img src="images/last_last_one/01.jpg" class="img-fluid" alt="Responsive image" width="420" /></li>
+                    <li><img src="images/last_last_one/02.svg" class="img-fluid" alt="Responsive image" width="30" /></li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="container footer">
+        <div class="row">
+            <div class="col-sm-6 left_one">
+                <a href="index.html"><img src="../images/site_logo.jpg" class="img-fluid" alt="Responsive image" width='120'/></a>
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                        English
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> Latin</a>
+                        <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> Dutch</a>
+                        <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> French</a>
+                        <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> Spanish</a>
+                        <a class="dropdown-item" href="#!"><i class="far fa-snowflake"></i> Russian</a>
+                    </div>
+                </div>
+                <p>© Cac.Bloom 2019 - All rights reserved</p>
+            </div>
+            <div class="col-sm-6 right_one">
+                <ul>
+                    <li><a href="#"> Terms of service</a></li>
+                    <li><a href="#">. privacy policy</a></li>
+                    <li><a href="#">. Cookies</a></li>
+                    <li><a href="#">. Press</a></li>
+                    <li><a href="#">. Team</a></li>
+                    <li><a href="#">. Jobs</a></li>
+                </ul>
+            </div>
+
+            </div>
+        </div>      
+      
+  
     <!-- main -->
   </body>
 </html>

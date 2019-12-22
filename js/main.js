@@ -7,20 +7,11 @@ function authorize(){
 
     username = username.toLowerCase();
 
-    if(username == 'admin' && password == 1234){
+    if(username == '' && password == ''){
         username = username.replace('');
-        return authorized();
+		console.log('Incorrect inputs');
 
     }else{
-        return deny();
+        return 0;
     }
-}
-
-function deny(){
-    console.log('denied');
-    alert("Login denied!")
-}
-
-function authorized(){
-    location.assign('./portal.php')
 }

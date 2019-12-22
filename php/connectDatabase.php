@@ -11,6 +11,7 @@ $db = "Feedback_DB";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
+$country = $_POST['country'];
 $comment = $_POST['comments']; 
 if (!$con)
   {
@@ -37,13 +38,13 @@ else{
 	   }
 	   // Create table
 	   mysqli_select_db( $con, $db);
-	   $sql = "CREATE TABLE Feedbacks(Name varchar(255), Email varchar(255), Subject varchar(255), Comment varchar(255))";
+	   $sql = "CREATE TABLE Feedbacks(Name varchar(255), Country varchar(255),Email varchar(255), Subject varchar(255), Comment varchar(500))";
 	   // Execute query
 	   mysqli_query($con, $sql);
 	}
 	else{
 	   mysqli_select_db($con, $db);
-	   $sql="INSERT INTO Feedbacks(Name, Email, Subject, Comment) VALUES('$name', '$email', '$subject', '$comment')";
+	   $sql="INSERT INTO Feedbacks(Name,Country, Email, Subject, Comment) VALUES('$name', '$country', '$email', '$subject', '$comment')";
 	   //mysqli_query($con, $sqli); 
 
 	   if (!mysqli_query($con, $sql)){

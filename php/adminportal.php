@@ -21,15 +21,15 @@
 		echo "<script>alert('Welcome to the admin portal')</script>";
 	}
 	  else{
-		  echo "<script>location.href='index.hmtl'</script>";
+		  echo "<script>location.href='../index.hmtl'</script>";
 	  }
   ?>
 	
 	<!--Navigation bar-->
-    <div class="header" id="nav-bar" style="margin-bottom: -15%;">
+    <div class="header" id="nav-bar" style="margin-bottom: 0%;">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="../index.html"
-          ><img src="../images/site_logo.png" alt="Logo" width="180" height="30"
+          ><img src="../images/site_logo.jpg" alt="Logo" width="180" height="30"
         /></a>
         <button
           class="navbar-toggler"
@@ -125,6 +125,10 @@
 				<input type="text" class="form-control" id="email" aria-describedby="email"  name="email">
 			  </div>
 			  <div class="form-group">
+			  <div class="form-group">
+				<label for="website">Website</label>
+				<input type="text" class="form-control" id="website" aria-describedby="email"  name="website">
+			  </div>
 				<label for="subject">Country</label>
 				<input type="text" class="form-control" id="subject"  name="subject">
 			  </div>
@@ -149,6 +153,10 @@
 			  <div class="form-group">
 				<label for="email">Position</label>
 				<input type="text" class="form-control" id="email" aria-describedby="email"  name="email">
+			  </div>
+			  <div class="form-group">
+				<label for="website">Website</label>
+				<input type="text" class="form-control" id="website" aria-describedby="email"  name="website">
 			  </div>
 			  <div class="form-group">
 				<label for="subject">Country</label>
@@ -212,7 +220,7 @@
     <div class="container footer" >
         <div class="row">
             <div class="col-sm-6 left_one">
-                <a href="index.html"><img src="../images/logo.jpg" class="img-fluid" alt="Responsive image" width='140'/></a>
+                <a href="index.html"><img src="../images/site_logo.jpg" class="img-fluid" alt="Responsive image" width='140'/></a>
                 <div class="btn-group dropup">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
                         English
